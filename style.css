@@ -1,13 +1,17 @@
 
 
 body{
+  font-family: sans-serif;
   background-color: #F2F1E8;
-  width: 1200px;
-  margin-left: 0 auto;
+  margin: 0;
+  /*display: flex;
+  justify-content: center;*/
 }
 .wrapper{
   display:flex;
   flex-direction: column;
+  /*justify-content: center;*/
+  text-align: center;
 
 }
 .home-header{
@@ -15,12 +19,14 @@ body{
   background-color: white;
   justify-content: center;
   align-items: center;
+  /*flex-shrink: 1;*/
 
 }
 .home-header a{
   align-self: center;
-  padding: 20px 10px;
+  margin: 20px 40px;
   color: #2B2F26;
+  font-size: 1.2em;
 }
 .home-header img{
   width: 30px;
@@ -29,14 +35,67 @@ body{
   padding: 10px 10px;
 }
 nav{
-  flex-grow: 2;
-  margin-left: 200px;
+  display: flex;
+  margin: auto;
+  /*flex-grow: 1.2;*/
+  /*margin-left: 50px;*/
 }
-.logo{
+/*.logo{
   flex-grow: 1;
-}
-/*nav a{
-  color: black;
-  padding-left: 60px;
-/*background-color: blue;
 }*/
+main{
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: auto;
+  flex-basis: 60%;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+}
+.top-row{
+  display: flex;
+  margin:0;
+}
+.bottom-row{
+  display: flex;
+  margin: 0;
+}
+.product-images{
+  /*flex-grow: 1;*/
+  flex-shrink: 1;
+  margin: 0 10px;
+}
+.product-images p{
+  position: relative;
+  margin: 0;
+  top: -60px;
+  left: 10px;
+  color: #F2F1E8;
+  background-color: #201A1C
+  /*flex-shrink: 1;*/
+}
+/*#image-1 img{
+  width: 100px;
+}
+#image-2 img{
+  width: 100px;
+}
+#image-3 img{
+  width: 100px;
+}
+#image-4 img{
+  width: 100px;
+  /*flex-shrink: 1;*/
+}
+/*#image-5 img{
+  width: 100px;*/
+  /*flex-shrink: 1;*/
+}
+/*#image-6 img{
+  width: 100px;*/
+  /*flex-shrink: 1;*/
+}
+/*#image-7 img{
+  width: 100px;*/
+  /*flex-shrink: 1;*/
+}
