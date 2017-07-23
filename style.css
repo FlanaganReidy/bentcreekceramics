@@ -6,6 +6,7 @@ body{
   margin: 0;
   /*display: flex;
   justify-content: center;*/
+  align-content: center;
 }
 .wrapper{
   display:flex;
@@ -13,6 +14,22 @@ body{
   /*justify-content: center;*/
   text-align: center;
 
+}
+h1, h3, p{
+  font-family: 'Merriweather', serif;
+
+}
+h1{
+  font-size: 3em;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+}
+h3{
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 1.8em;
 }
 .home-header{
   display: flex;
@@ -27,6 +44,8 @@ body{
   margin: 20px 40px;
   color: #2B2F26;
   font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
 .home-header img{
   width: 30px;
@@ -53,6 +72,13 @@ main{
   flex-basis: 60%;*/
   /*justify-content: center;*/
   /*align-items: center;*/
+}
+.half-page{
+  align-content: center;
+}
+main.about-page{
+  width:800px;
+  text-align: left;
 }
 .rows{
   display: flex;
@@ -84,38 +110,43 @@ main{
   position: relative;
   margin: 0;
   top: -60px;
-  padding: 10px 10px 10px 0;
-
+  padding: 10px 10px 10px 10px;
   color: #F2F1E8;
-  background-color: #201A1C
+  background-color: #2B2F26;
   /*flex-shrink: 1;*/
 }
-/*.top-row{
-  display:flex;
-  justify-content: center;
-}*/
-/*#image-1 img{
-  width: 200px;
+footer{
+  text-align: left;
 }
-#image-2 img{
-  width: 300px;
+footer p{
+  padding: 10px;
+  background-color: #2B2F26;
+  color: #F2F1E8;
+  font-weight: lighter;
+  margin-bottom: 0;
 }
-#image-3 img{
-  width: 200px;
-}
-#image-4 img{
+.section1 img{
   width: 100px;
-  flex-shrink: 1;
+  float: left;
 }
-#image-5 img{
+.section3 img{
   width: 100px;
-  flex-shrink: 1;
 }
-#image-6 img{
-  width: 100px;
-  flex-shrink: 1;
+blockquote{
+  border-left: solid 1px;
+  padding-left: 30px;
 }
-#image-7 img{
-  width: 100px;
-  flex-shrink: 1;
-}*/
+.middle-banner{
+  background-image: url(./images/background-3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  color: white;
+  margin: 30px 0;
+}
+.middle-banner h1{
+  padding-top: 50px;
+}
+.half-page #bottom-half article{
+  float: left;
+}
