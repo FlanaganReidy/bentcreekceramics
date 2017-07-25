@@ -144,9 +144,13 @@ footer p{
 .section1 img{
   width: 100px;
   float: left;
+  margin-right: 10px;
 }
 .section3 img{
-  width: 100px;
+  width: 125px;
+}
+.about-page h3{
+  margin-bottom: 5px;
 }
 blockquote{
   border-left: solid 1px;
@@ -172,10 +176,13 @@ blockquote{
   justify-content: space-between;
 }
 .article3{
-  flex-basis: 80%;
+  flex-basis: 75%;
 }
 .image-n-caption{
-  flex-basis: 10%;
+  flex-basis: 15%;
+}
+.image-n-caption p{
+  font-size: .6em;
 }
 thead{
   text-align: center;
