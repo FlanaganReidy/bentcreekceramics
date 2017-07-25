@@ -13,6 +13,7 @@ body{
   flex-direction: column;
   /*justify-content: center;*/
   text-align: center;
+  line-height: 1.8;
 
 }
 h1, h3, p{
@@ -149,4 +150,28 @@ blockquote{
 }
 .half-page #bottom-half article{
   float: left;
+}
+.section3{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.article3{
+  flex-basis: 80%;
+}
+.image-n-caption{
+  flex-basis: 10%;
+}
+thead{
+  text-align: center;
+}
+td{
+  border: solid 1px;
+  padding: 8px;
+}
+tr:nth-child(1), tr:nth-child(3){
+  background-color: #C5BAA4;
+}
+thead tr td{
+  background-color: #F2F1E8;
 }
