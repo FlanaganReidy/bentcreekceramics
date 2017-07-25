@@ -126,6 +126,11 @@ footer p{
   font-weight: lighter;
   margin-bottom: 0;
 }
+/*About page CSS*/
+#top-half{
+  display:flex;
+  justify-content: space-around;
+}
 .section1 img{
   width: 100px;
   float: left;
