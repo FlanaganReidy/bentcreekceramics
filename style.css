@@ -36,7 +36,9 @@ h3{
   background-color: white;
   justify-content: center;
   align-items: center;
-  /*flex-shrink: 1;*/
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 
 }
 .home-header a{
@@ -46,6 +48,12 @@ h3{
   font-size: 1.2em;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
+}
+p a{
+  color: #968772;
+}
+p a:hover{
+  color: #967343;
 }
 .home-header img{
   width: 30px;
@@ -57,13 +65,25 @@ nav{
   display: flex;
   margin: auto;
 }
+nav a {
+  color: #2B2F26 ;
+}
+
+nav a:hover {
+  color: #CD5D67 ;
+}
+
+nav a:active {
+  color: #968772 ;
+}
 /* Home Page CSS*/
+.title{
+  margin-top: 70px;
+}
 main.home{
   display:flex;
-  width: 100%;
+  width: 96%;
   display: inline-block;
-/*}
-main.home{*/
   margin: 0 2% 0 2%;
   display: flex;
   flex-direction: column;
@@ -91,6 +111,7 @@ main.home{*/
   background-position: center;
   display:flex;
   align-items: flex-end;
+  height: 250px;
 }
 .home p{
   font-size: .8em;
@@ -114,6 +135,7 @@ main.home{*/
   background-image: url(./images/product-4.jpg);
   flex-basis: 18%;
   height: 200px;
+  margin-left: 0;
 }
 #image-5{
   background-image: url(./images/product-5.jpg);
@@ -122,16 +144,13 @@ main.home{*/
 }
 #image-6{
   background-image: url(./images/product-6.jpg);
-  flex-basis: 28%;
+  flex-basis: 27%;
   height: 200px;
 }
 #image-7{
   background-image: url(./images/product-7.jpg);
   flex-basis: 18%;
   height: 200px;
-}
-.product-images {
-  height: 250px;
 }
 .bottom-row .product-images img{
   height: 146px;
@@ -145,7 +164,7 @@ footer{
   text-align: left;
 }
 footer p{
-  padding: 10px;
+  padding: 20px;
   background-color: #2B2F26;
   color: #F2F1E8;
   font-weight: lighter;
@@ -155,18 +174,16 @@ footer p{
 
 .about-page{
   text-align: left;
+  flex-basis: 70%;
 }
 .half-page{
   align-items: center;
 }
-
 #top-half{
   display:flex;
   justify-content: space-around;
 }
-.about-page{
-  flex-basis: 50%;
-}
+
 #bottom-half{
   display:flex;
   justify-content: space-around;
@@ -187,8 +204,10 @@ footer p{
   text-align: left;
 }
 blockquote{
-  border-left: solid 1px;
+  font-family: 'Merriweather', serif;
+  border-left: solid 1px #968772;
   padding-left: 30px;
+  margin: 0;
 }
 .middle-banner{
   background-image: url(./images/background-3.jpg);
@@ -200,6 +219,9 @@ blockquote{
 }
 .middle-banner h1{
   padding-top: 50px;
+}
+#top-half{
+  margin-top: 60px;
 }
 .half-page #bottom-half article{
   float: left;
@@ -219,13 +241,14 @@ blockquote{
   font-size: .6em;
 }
 table{
+  font-family: 'Merriweather', sans-serif;
   border-collapse: collapse;
 }
 thead{
   text-align: center;
 }
 td{
-  border: solid 1px;
+  border: solid 1px #968772;
   padding: 8px;
 }
 tr:nth-child(1), tr:nth-child(3){
@@ -233,4 +256,51 @@ tr:nth-child(1), tr:nth-child(3){
 }
 thead tr td{
   background-color: #F2F1E8;
+}
+/*Newsletter Page*/
+.newsletter-background{
+  background-image: url(./images/background-2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+.newsletter-form {
+  background-color: white;
+  margin: 20% 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.newsletter-form h1{
+  font-size: 1.8em;
+  padding: 0 20px;
+  font-weight: lighter;
+}
+.newsletter-form h3{
+  font-size: 1.4em;
+  margin-top:20px;
+  padding: 0 20px;
+}
+input{
+  width: 88%;
+  font-size: 1.6em;
+  margin: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 2px #968772;
+}
+button{
+  margin: 30px 0;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.4em;
+  color: white;
+  background-color: #968772;
+}
+button:hover{
+  background:#967343;
 }
