@@ -72,6 +72,9 @@ nav a {
 nav a:hover {
   color: #CD5D67 ;
 }
+a.here {
+  color: #968772;
+}
 
 nav a:active {
   color: #968772 ;
@@ -266,6 +269,7 @@ thead tr td{
   justify-content: space-around;
 }
 .newsletter-form {
+  min-height: auto;
   background-color: white;
   margin: 20% 0;
   display: flex;
