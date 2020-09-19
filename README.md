@@ -1,4 +1,4 @@
-# Week One Project
+# Pure HTML Example
 - HTML
 - CSS
 Background: #F2F1E8
